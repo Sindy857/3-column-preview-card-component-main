@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+
+/* ### Primary */
+
+--Brightorange: hsl(31, 77%, 52%);
+--Darkcyan: hsl(184, 100%, 22%);
+--Verydarkcyan: hsl(179, 100%, 13%);
+
+/* ### Neutral */
+
+--Transparentwhite/* (paragraphs) */: hsla(0, 0%, 100%, 0.75);
+--Verylightgray/* (background, headings, buttons) */: hsl(0, 0%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    padding: 10% 5%;
+    border-radius: .5rem;
+}
+
+#sedans, #suvs, #luxury {
+    padding: 5% 5% 30% 5%;
+    color: var(--Transparentwhite);
+    position: relative;
+    
+}
+
+#sedans {
+    background-color: var(--Brightorange);
+    border-radius: .5rem .5rem 0 0;
+}
+
+#suvs {
+    background-color: var(--Darkcyan);
+}
+
+#luxury {
+    background-color: var(--Verydarkcyan);
+    border-radius: 0 0 .5rem .5rem;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+    margin: 1rem;
+    font-family: 'Big Shoulders Display', sans-serif;
+    letter-spacing: .1rem;
+    font-size: 2rem;
+}
+
+img {
+    margin: 1rem 1rem .5rem 1rem;
+}
+
+p {
+    margin: 0 1rem 1rem 1rem;
+    line-height: 1.7rem;
+    font-size: 1.3rem;
+}
+
+button {
+    padding: .8rem 2.5rem;
+    border-radius: 2rem;
+    border: none;
+    margin: 1rem;
+    font-weight: bold;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: .07rem;
+    position: absolute;
+    bottom: 5%;
+}
+
+#sedans button {
+    color: var(--Brightorange);
+    
+}
+
+#suvs button {
+    color: var(--Darkcyan);
+    
+}
+
+#luxury button {
+    color: var(--Verydarkcyan);
+    
+}
+
+@media screen and (min-width: 600px) {
+    html {
+        font-size: 21px;
+    }
+
+    main {
+        padding: 10% 10%;
+    }
+    #sedan, #suvs, #luxury {
+        padding: 5% 5% 20% 5%;
+    }
+}
+
+@media screen and (min-width: 900px){
+    
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+    #sedans, #suvs, #luxury {
+    }
+
+    #sedans {
+        border-radius: .5rem 0 0 .5rem;
+    }
+    #luxury {
+        border-radius: 0 .5rem .5rem 0;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    
+    #sedans, #suvs, #luxury {
+        padding: 5% 5% 15% 5%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    
+    #sedans, #suvs, #luxury {
+        padding: 5% 5% 15% 5%;
+    }
+}
